@@ -1,0 +1,4 @@
+Git won't keep empty directories.
+This file lets git keep it's containing directory while excluding all other files in the directory.
+A custom line in the main .gitignore file specifies not to ignore this file.
+Another custom line in the main .gitignore file says to ignore all the other files in this directory.
