@@ -1,4 +1,6 @@
 # Custom
+xhorizon/evap/temp-figs/*
+!xhorizon/evap/temp-figs/.gitkeep
 # docs/source/API/apidoc
 
 # Byte-compiled / optimized / DLL files
