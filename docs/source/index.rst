@@ -4,10 +4,28 @@ xhorizon
 ================================
 
 
-Welcome!
+*xhorizon*: A Python package for explicitly computing Penrose diagrams in general relativity.
 --------
 
-Hello and welcome to the xhorizon package!
+| **I finally gave the package a makeover and updated to Python 3!**
+
+| **The new documentation is still under construction...**
+| **Check back soon for examples and a tutorial!**
+
+
+Links
+-----
+   - `GitHub <https://github.com/xh-diagrams/xhorizon>`_.
+   .. - `Documetation <https://skeleton-jcschindler01.readthedocs.io/>`_.
+   - `PyPi <https://pypi.org/project/xhorizon/>`_.
+
+
+Getting Started
+---------------
+::
+
+   pip install xhorizon
+
 
 
 Table of Contents
@@ -18,8 +36,8 @@ Table of Contents
 
    Welcome! <welcome>
    Tutorial <TUTORIAL/00-overview>
+   Dev Notes <dev>
    API Reference <API/apidoc/modules>
-
 
 Search
 ------
