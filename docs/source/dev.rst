@@ -1,7 +1,7 @@
 Dev Notes
 =========
 
-*xhorizon* uses a `Skeleton <https://github.com/jcschindler01/skeleton>`_.
+This package uses a `Skeleton <https://github.com/jcschindler01/skeleton>`_.
 
 
 It Utilizes:
