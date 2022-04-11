@@ -1,4 +1,15 @@
 
+"""
+Hello! I am the docstring heading the top level __init__.py in xhorizon.
+"""
+
+######### FROM SKELETON ###########
+
+from importlib.metadata import version
+__version__ = version("xhorizon")
+
+###################################
+
 ## external
 import numpy as np
 import matplotlib.pyplot as plt
