@@ -19,9 +19,9 @@ sys.path.insert(0, os.path.abspath('../../src'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'skeleton'
-copyright = '2022, jcschindler01'
-author = 'jcschindler01'
+project = 'xhorizon'
+copyright = '2022, Joseph C Schindler'
+author = 'Joseph C Schindler'
 
 
 # -- General configuration ---------------------------------------------------
