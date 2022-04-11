@@ -1,6 +1,6 @@
 
-import skeleton
+import xhorizon
 
-print("skeleton version = %s"%(skeleton.__version__))
+print("xhorizon version = %s"%(xhorizon.__version__))
 
 
