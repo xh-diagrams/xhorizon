@@ -78,7 +78,7 @@ def rline_zero(reglist, npoints=5001, inf=100., sty={}, sty2={}):
 				if b.sgnf<0.:
 					style.update(sty2)
 				## curve
-				cv = xh.cm.rstarlines_special_2([0.], b.uvbounds, c=0., sty=style, inf=1.*inf, npoints=1.*npoints, eps=1e-12)
+				cv = xh.cm.rstarlines_special_2([0.], b.uvbounds, c=0., sty=style, inf=1.*inf, npoints=1*npoints, eps=1e-12)
 				b.add_curves_uv(cv)
 
 
@@ -322,18 +322,18 @@ def make_rlines(reglist, chainparams, l=.05, R=1., Tevap=None, sty={}):
 	x = np.arange(0.,.5*R/l,.5)
 	scale = l
 	style.update(dict(c='c'))
-	rlines(reglist, scale*x, sty=style, inf=10., npoints=2001.)
+	rlines(reglist, scale*x, sty=style, inf=10., npoints=2001)
 	## R scale
 	x = np.arange(0.,25.01,.5)
 	scale = R
 	style.update(dict(c='m'))
-	rlines(reglist, scale*x, sty=style, inf=25., npoints=1001.)
+	rlines(reglist, scale*x, sty=style, inf=25., npoints=1001)
 	## Tevap scale
 	if Tevap is not None:
 		x = np.arange(0.,25.01,.5)
 		scale = Tevap
 		style.update(dict(c='#0000f0'))
-		rlines(reglist, scale*x, sty=style, inf=25., npoints=1001.)
+		rlines(reglist, scale*x, sty=style, inf=25., npoints=1001)
 
 
 def vticks(reglist, dv=1., inf1=100., inf2=50.+irr, sty={}):
@@ -498,7 +498,7 @@ def rlines(reglist, rvals, sty={}, npoints=2001, inf=25.):
 					style = dict(c='c', ls='-', lw=.5, zorder=1500)
 					style.update(sty)
 					rstarvals = 1.*b.master.metfunc.F(rvals[i:i+1])
-					b.add_curves_uv(xh.cm.rstarlines_special_2(rstarvals, b.uvbounds, c=b.master.rparams['c'], sty=style, inf=1.*inf, npoints=1.*npoints))
+					b.add_curves_uv(xh.cm.rstarlines_special_2(rstarvals, b.uvbounds, c=b.master.rparams['c'], sty=style, inf=1.*inf, npoints=1*npoints))
 	return reglist
 
 
