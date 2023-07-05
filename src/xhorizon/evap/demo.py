@@ -60,7 +60,7 @@ def demo():
 	label = '$(a)$'
 
 	# func type
-	ftype = 2
+	ftype = 0
 
 	## input
 	l  = 1e-4
@@ -73,11 +73,11 @@ def demo():
 	L = 10.
 
 	## evap
-	Nevap = 12
+	Nevap = 3
 	Tevap = 10.
 
 	## accrete
-	Nacc = 5
+	Nacc = 1
 	Tacc = .5
 
 	## seed
