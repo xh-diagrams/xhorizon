@@ -142,7 +142,7 @@ def demo():
 
 	## label
 	if True:
-		plt.annotate(s=label, xy=(.95,.97), xycoords='axes fraction', ha='right', va='top', size=8)
+		plt.annotate(text=label, xy=(.95,.97), xycoords='axes fraction', ha='right', va='top', size=8)
 
 
 	## auto param label
@@ -150,14 +150,14 @@ def demo():
 		plabel = [r"$l_{ev}=%3s$"%(le), r"", r"$l=%3s$"%(l), r"$2M=%3s$"%(R)]
 		plabel += [r"", r"$\tau_{acc}=%3s$"%(Tacc), r"$\tau_{ev}=%3s$"%(Tevap)]
 		plabel = "\n".join(plabel)
-		plt.annotate(s=plabel, xy=(.95,.03), xycoords='axes fraction', ha='right', va='bottom', size=8)
+		plt.annotate(text=plabel, xy=(.95,.03), xycoords='axes fraction', ha='right', va='bottom', size=8)
 
 	## manual param label
 	if False:
 		plabel = [r"$\tau_{ev}=%s$"%(Tevap), r"$\tau_{acc}=%s$"%(Tacc)]
 		plabel += [r"", r"$M=10^{-3}$", r"$l_{ev}=l=10^{-4}$"]
 		plabel = "\n".join(plabel)
-		plt.annotate(s=plabel, xy=(.95,.03), xycoords='axes fraction', ha='right', va='bottom', size=8)
+		plt.annotate(text=plabel, xy=(.95,.03), xycoords='axes fraction', ha='right', va='bottom', size=8)
 
 	## mass plot
 	mpgo = True
