@@ -44,9 +44,9 @@ def funclist_chain(funclist, seed=0, du=None, dv=None, r0p=None, r0f=None, u0=No
 	print("dv funclist_chain")
 	print(repr(dv))
 	## init default values
-	if u0==None:
+	if u0 is None:
 		u0 = np.zeros(len(funclist))
-	if v0==None:
+	if v0 is None:
 		v0 = np.zeros(len(funclist))
 	if ps_matchmode==None:
 		ps_matchmode = ['rv' for func in funclist]
