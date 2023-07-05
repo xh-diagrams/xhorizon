@@ -6,10 +6,10 @@ import matplotlib.patches
 
 def massplotrc():
 	## tex
-	plt.rcParams['text.usetex'] = True
+	#plt.rcParams['text.usetex'] = True
 	plt.rcParams['font.family'] = 'serif'
 	plt.rcParams['font.serif'] = []
-	plt.rcParams['text.latex.preamble'] = []
+	#plt.rcParams['text.latex.preamble'] = []
 	## rc
 	plt.rcParams['font.size'] = 7
 	plt.rcParams['axes.linewidth'] = .4
