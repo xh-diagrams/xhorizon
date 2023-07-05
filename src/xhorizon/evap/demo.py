@@ -51,7 +51,7 @@ def demo():
 	## save
 	path = "temp-figs/demo"
 	sfp = dict(dpi=800)
-	temp_only = False
+	temp_only = True
 
 	## draw
 	draw = True
