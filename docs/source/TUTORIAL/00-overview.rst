@@ -2,7 +2,10 @@
 Tutorial
 ==========
 
-This file provides an overview of the tutorial and defines a tutorial toctree.
+First install with ``pip install xhorizon``. Follow the tutorial to start making diagrams!
+
+Contents
+####
 
 .. toctree::
    :maxdepth: 2
