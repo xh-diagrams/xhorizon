@@ -1,10 +1,10 @@
 Getting Started: Minimal Examples
-=========
+=================================
 
 Basic syntax
-######
+############
 
-The absolute minimum syntax to generate a diagram with ``xhorizon`` is::
+The minimum syntax to generate a diagram with ``xhorizon`` is::
     
     import xhorizon as xh
     import matplotlib.pyplot as plt
@@ -19,15 +19,16 @@ The absolute minimum syntax to generate a diagram with ``xhorizon`` is::
   :width: 400
   :alt: Diagram.
 
-You can think of:
+Above you can think of:
 
-* ``f`` as a "metric function" object, eg here in the Schwarzschild example f(r)=1-2M/r.
-* ``reg`` as a "region" object, as in "maximally extended region with metric function f(r)".
+* ``f`` as a "metric function" object, here (Schwarzschild example) representing the function f(r)=1-R/r along with its integral, roots, and other information.
 
-By default the boundaries, horizons, and some constant radius lines were plotted.
+* ``reg`` as a "region" object, as in "a maximally extended region with metric function f(r)", consisting of a collection of blocks, curves, and coordinate transformation functions.
+
+By default the boundaries, horizons, and some constant radius lines are included, but the diagrams are completely customizeable. Later in the tutorial we will learn to turn off default features and add custom curves that can be defined in any of several standard coordinate systems. We will also see how to generate various types of regions and use built-in or custom metric functions to define the metric. But for now, back to the basics.
 
 
-The output was not very pretty. To make null rays at 45 degrees you must fix the aspect ratio. You can do this (and make a prettier plot) by adjusting matplotlib options as normal::
+The output above was not very pretty. To make null rays at 45 degrees you must fix the aspect ratio. You can do this (and make a prettier plot) by adjusting matplotlib options in the usual ways::
 
 
     
@@ -52,7 +53,7 @@ The output was not very pretty. To make null rays at 45 degrees you must fix the
   :alt: Diagram.
 
 
-Or you can use ``xh.newfig()`` to automatically "prettify" matplotlib settings and set aspect ratio::
+To make this easier you can use ``xh.newfig()`` to automatically "prettify" matplotlib settings and set aspect ratio::
 
     
     import xhorizon as xh
@@ -68,3 +69,5 @@ Or you can use ``xh.newfig()`` to automatically "prettify" matplotlib settings a
 .. image:: ../_static/tutorial/001c.png
   :width: 400
   :alt: Diagram.
+
+In this Reissner-Nordstrom example, the blue and green default lines are lines of constant radius at two different length scales, corresponding to the scales of the inner and outer horizon.

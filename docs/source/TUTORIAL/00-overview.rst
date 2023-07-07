@@ -1,11 +1,13 @@
 
+.. _tutorial:
+
 Tutorial
 ==========
 
-First install with ``pip install xhorizon``. Follow the tutorial to start making diagrams!
+| First install with ``pip install xhorizon``. 
+| Then follow the tutorial to start making diagrams!
 
-Contents
-####
+**Contents**:
 
 .. toctree::
    :maxdepth: 2
