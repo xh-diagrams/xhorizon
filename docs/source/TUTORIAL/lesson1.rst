@@ -86,7 +86,7 @@ To make the diagram more useful we can add some informational annotations. The r
     metric_info  = "\n".join([f.info[key] for key in ["Type", "Metric Function", "Parameters"]])
     horizon_info = "\n".join(["horizons", r"$r_1 \approx %.3f$"%(f.rj[1]),r"$r_2 \approx %.3f$"%(f.rj[2])])
     rlines_info  = "lines of constant radius\n\n"
-    rlines_info += "\n".join(["green (small scale):", r"spacing = $r_1/10$", r"range = $[r_1/2, 5r_1)$", "\n"])
+    rlines_info += "\n".join(["green (small scale):", r"spacing = $r_1/10$", r"range = $[0.5r_1, 5r_1)$", "\n"])
     rlines_info += "\n".join(["blue  (large scale):", r"spacing = $r_2/10$", r"range = $[5r_1, 20r_2)$"])
 
     plt.annotate(text=metric_info,  xy=(-4.1,-4.1), ha='left',  va='bottom', size=8)
