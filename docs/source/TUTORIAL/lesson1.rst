@@ -46,7 +46,7 @@ The output above was not very pretty. To make null rays at 45 degrees you must f
     plt.gca().set_aspect(1)
 
     reg.rplot()
-    plt.show()
+    plt.savefig("out.png")
 
 .. image:: ../_static/tutorial/001b.png
   :width: 400
@@ -65,10 +65,38 @@ To make this easier you can use ``xh.newfig()`` to automatically "prettify" matp
     xh.newfig()
 
     reg.rplot()
-    plt.show()
+    plt.savefig("out.png", dpi = 200)
 
 .. image:: ../_static/tutorial/001c.png
   :width: 400
   :alt: Diagram.
 
 In this Reissner-Nordstrom example, the blue and green default lines are lines of constant radius at two different length scales, corresponding to the scales of the outer and inner horizons.
+
+To make the diagram more useful we can add some informational annotations. The region and metric objects are capable of reporting some information about themselves::
+
+    import xhorizon as xh
+    import matplotlib.pyplot as plt
+
+    f = xh.mf.reissner_nordstrom(M=0.5, Q=0.3)
+    reg = xh.reg.MAXreg(f)
+
+    xh.newfig()
+
+    metric_info  = "\n".join([f.info[key] for key in ["Type", "Metric Function", "Parameters"]])
+    horizon_info = "\n".join(["horizons", r"$r_1 \approx %.3f$"%(f.rj[1]),r"$r_2 \approx %.3f$"%(f.rj[2])])
+    rlines_info  = "lines of constant radius\n\n"
+    rlines_info += "\n".join(["green (small scale):", r"spacing = $r_1/10$", r"range = $[r_1/2, 5r_1)$", "\n"])
+    rlines_info += "\n".join(["blue  (large scale):", r"spacing = $r_2/10$", r"range = $[5r_1, 20r_2)$"])
+
+    plt.annotate(text=metric_info,  xy=(-4.1,-4.1), ha='left',  va='bottom', size=8)
+    plt.annotate(text=horizon_info, xy=(-4.1, 4.1), ha='left',  va='top',    size=8)
+    plt.annotate(text=rlines_info,  xy=( 4.1, 4.1), ha='right', va='top',    size=7)
+
+    reg.rplot()
+    plt.savefig("out.png", dpi = 250)
+
+.. image:: ../_static/tutorial/001d.png
+  :width: 400
+  :alt: Diagram.
+
