@@ -63,6 +63,7 @@ To make this easier you can use ``xh.newfig()`` to automatically "prettify" matp
     reg = xh.reg.MAXreg(f)
 
     xh.newfig()
+
     reg.rplot()
     plt.show()
 
@@ -70,4 +71,4 @@ To make this easier you can use ``xh.newfig()`` to automatically "prettify" matp
   :width: 400
   :alt: Diagram.
 
-In this Reissner-Nordstrom example, the blue and green default lines are lines of constant radius at two different length scales, corresponding to the scales of the inner and outer horizon.
+In this Reissner-Nordstrom example, the blue and green default lines are lines of constant radius at two different length scales, corresponding to the scales of the outer and inner horizons.
