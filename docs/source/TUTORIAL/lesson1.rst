@@ -21,7 +21,7 @@ The minimum syntax to generate a diagram with ``xhorizon`` is::
 
 Above you can think of:
 
-* ``f`` as a "metric function" object, here (Schwarzschild example) representing the function f(r)=1-R/r along with its integral, roots, and other information.
+* ``f`` as a "metric function" object, here (Schwarzschild) representing the function f(r)=1-R/r along with its integral, roots, and other information.
 
 * ``reg`` as a "region" object, as in "a maximally extended region with metric function f(r)", consisting of a collection of blocks, curves, and coordinate transformation functions.
 
