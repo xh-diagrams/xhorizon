@@ -5,7 +5,7 @@ Tutorial
 ==========
 
 | First install with ``pip install xhorizon``. 
-| Then follow the tutorial to start making diagrams!
+| Then follow this tutorial to start making diagrams!
 
 **Contents**:
 
