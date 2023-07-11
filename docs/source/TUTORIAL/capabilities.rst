@@ -1,7 +1,11 @@
-0. Package Capabilities and Gallery
-===================================
+0. Package Capabilities
+=======================
 
-This package implements the methods of the paper `arxiv:1802.02263 <https://arxiv.org/abs/1802.02263>`_.
+This package implements the methods of the paper:
+
+JC Schindler, A Aguirre. *Algorithms for the explicit computation of Penrose diagrams.* Class Quantum Grav 35 105019 (2018). `doi:10.1088/1361-6382/aabce2 <https://doi.org/10.1088/1361-6382/aabce2>`_. [`arxiv:1802.02263 <https://arxiv.org/abs/1802.02263>`_.]
+
+
 
 Allowed metrics
 ###############
@@ -15,9 +19,6 @@ It allows one to plot causal diagrams for 3+1 dimensional spacetimes in two clas
 
 
 * Metrics that are piecewise-of the above form, glued along radial null shell junctions. Arbitrarily many shells and piecewise regions can be included to approximate smooth dynamical evolution.
-
-  
-
 
 
 Nature of the diagrams
@@ -65,4 +66,7 @@ The package makes available functions for performing coordinate transformations,
 
 Gallery
 #######
+
+You can see some examples of what is possible in the :ref:`gallery`.
+
 

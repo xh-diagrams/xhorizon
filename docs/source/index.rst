@@ -10,36 +10,9 @@ A Python package.
 
 
 | **Finally gave the package a makeover and updated to Python 3!**
-
 | **The new documentation is still under construction...**
 | **but there is now an ever expanding tutorial!**
 | **(Check docs version "latest" for updates.)**
-
-
-
-Links
------
-   - `GitHub <https://github.com/xh-diagrams/xhorizon>`_.
-   - `Documentation <https://xhorizon.readthedocs.io/>`_.
-   - `PyPi <https://pypi.org/project/xhorizon/>`_.
-
-
-Background Theory
------------------
-JC Schindler, A Aguirre. 
-*Algorithms for the explicit computation of Penrose diagrams.*
-`Class Quantum Grav 35 105019 <https://doi.org/10.1088/1361-6382/aabce2>`_.
-(2018).
-`arxiv:1802.02263 <https://arxiv.org/abs/1802.02263>`_.
-
-
-Getting Started
----------------
-To install::
-
-   pip install xhorizon
-
-To start using the tools, begin with the :ref:`tutorial` and keep an eye out for `example scripts <https://github.com/xh-diagrams/xhorizon/tree/main/scripts/examples>`_.
 
 
 Table of Contents
@@ -49,9 +22,34 @@ Table of Contents
    :maxdepth: 1
 
    Welcome! <welcome>
+   Gallery <gallery>
    Tutorial <TUTORIAL/00-overview>
    Dev Notes <dev>
    API Reference <API/apidoc/modules>
+
+
+Getting Started
+---------------
+To install::
+
+   pip install xhorizon
+
+| To start using the tools, try the :ref:`tutorial`.
+| You can also check the :ref:`gallery` for ideas and keep an eye out for `example scripts <https://github.com/xh-diagrams/xhorizon/tree/main/scripts/examples>`_. 
+
+
+Background Theory
+-----------------
+JC Schindler, A Aguirre. *Algorithms for the explicit computation of Penrose diagrams.* Class Quantum Grav 35 105019 (2018). `doi:10.1088/1361-6382/aabce2 <https://doi.org/10.1088/1361-6382/aabce2>`_. [`arxiv:1802.02263 <https://arxiv.org/abs/1802.02263>`_.]
+
+
+Links
+-----
+   - `GitHub <https://github.com/xh-diagrams/xhorizon>`_.
+   - `Documentation <https://xhorizon.readthedocs.io/>`_.
+   - `PyPi <https://pypi.org/project/xhorizon/>`_.
+
+
 
 Search
 ------
