@@ -1,8 +1,5 @@
-Getting Started: Minimal Examples
-=================================
-
-Basic syntax
-############
+1. Getting Started: Basic Syntax and Minimal Examples
+=====================================================
 
 The minimum syntax to generate a diagram with ``xhorizon`` is::
     
@@ -21,7 +18,7 @@ The minimum syntax to generate a diagram with ``xhorizon`` is::
 
 Above you can think of:
 
-* ``f`` as a "metric function" object, here (Schwarzschild) representing the function f(r)=1-R/r along with related integrals, roots, and other information.
+* ``f`` as a "metric function" object, here (in Schwarzschild case) representing the function f(r)=1-R/r along with related integrals, roots, and other information.
 
 * ``reg`` as a "region" object, as in "a maximally extended region with metric function f(r)", consisting of a collection of blocks, curves, and coordinate transformation functions.
 
@@ -100,3 +97,5 @@ To make the diagram more useful we can add some informational annotations. The r
   :width: 400
   :alt: Diagram.
 
+
+All coordinates and parameters in the diagram are unitless. Units of all values are fixed by a choice of an overall length scale, as described in the algorithms paper arxiv:1802.02263.

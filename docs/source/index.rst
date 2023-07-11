@@ -9,10 +9,11 @@ xhorizon
 A Python package.
 
 
-| **I finally gave the package a makeover and updated to Python 3!**
+| **Finally gave the package a makeover and updated to Python 3!**
 
 | **The new documentation is still under construction...**
 | **but there is now an ever expanding tutorial!**
+| **(Check docs version "latest" for updates.)**
 
 
 
@@ -45,7 +46,7 @@ Table of Contents
 -----------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Welcome! <welcome>
    Tutorial <TUTORIAL/00-overview>
