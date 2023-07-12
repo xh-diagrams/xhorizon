@@ -33,7 +33,7 @@ def newfig(sqfig=4, sqaxis=4, tilde=False, tex=False):
 	## set rc params
 	pubrc(tex=tex)
 	## new figure
-	plt.figure(figsize=(sqfig,sqfig))
+	f = plt.figure(figsize=(sqfig,sqfig))
 	## new axes
 	left, bottom, right, top = .105, .105, .97, .97
 	width, height = right-left, top-bottom
@@ -51,7 +51,8 @@ def newfig(sqfig=4, sqaxis=4, tilde=False, tex=False):
 	sqaxis = sqaxis * 1.1
 	plt.xlim(-sqaxis,sqaxis)
 	plt.ylim(-sqaxis,sqaxis)
-
+	## return
+	return f
 
 
 
