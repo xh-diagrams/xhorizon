@@ -1,5 +1,9 @@
-1. Getting Started: Basic Syntax and Minimal Examples
-=====================================================
+1. Getting Started
+==================
+
+Basic syntax and minimal examples
+#################################
+
 
 The minimum syntax to generate a diagram with ``xhorizon`` is::
     
@@ -18,9 +22,15 @@ The minimum syntax to generate a diagram with ``xhorizon`` is::
 
 Above you can think of:
 
-* ``f`` as a "metric function" object, here (in Schwarzschild case) representing the function f(r)=1-R/r along with related integrals, roots, and other information.
+* ``f`` as a "metric function" object
 
-* ``reg`` as a "region" object, as in "a maximally extended region with metric function f(r)", consisting of a collection of blocks, curves, and coordinate transformation functions.
+   - in the above (Schwarzschild) case, this represents the function :math:`f(r)=1-R/r` along with related integrals, roots, and other information.
+
+* ``reg`` as a "region" object
+
+   - as in "a maximally extended region with metric function :math:`f(r)`",
+
+   - the object consists of a collection of blocks, curves, and coordinate transformation functions.
 
 By default the boundaries, horizons, and some constant radius lines are included, but the diagrams are completely customizeable. Later in the tutorial we will learn to turn off default features and add custom curves that can be defined in any of several standard coordinate systems. We will also see how to generate various types of regions and use built-in or custom metric functions to define the metric. But for now, back to the basics.
 

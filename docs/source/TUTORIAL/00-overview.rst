@@ -10,7 +10,7 @@ Tutorial
 **Tutorial Contents**:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    capabilities
    lesson1
