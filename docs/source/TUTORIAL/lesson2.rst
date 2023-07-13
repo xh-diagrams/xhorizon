@@ -66,13 +66,13 @@ The command ``xh.curve()`` created a "curve" object. A curve object represents t
 
 You will notice there are two copies of the curve.
 
-This is because a ``region`` actually consists of a collection of ``blocks``. Each block has its own patch of Schwarzschild (t,r) and Eddington-Finklestein (u,v) coordinates. Blocks are separated by horizons (where :math:`f(r)=0`) and bounded by :math:`r=0` and :math:`r=\infty`. These boundaries are, of course, precisely where patches of Schwarzschild coordinates end.
+This is because a ``region`` actually consists of a collection of ``blocks``. Each block has its own patch of Schwarzschild (t,r) and Eddington-Finklestein (u,v) coordinates. Blocks are separated by horizons (where :math:`f(r)=0`) and bounded by :math:`r=0` and :math:`r=\infty`. These separations/boundaries are, of course, precisely where patches of Schwarzschild coordinates end.
 
-With the loop ``for b in reg.blocks:`` we attempted to add the curve to every block in the region. However, the function ``block.add_curves_tr()`` rejects curves that include invalid radii for the block. In this case the curve lies entirely outside the horizon, and is successfully added to both "exterior" (:math:`r>R=2M`) blocks.
+With the loop ``for b in reg.blocks`` we attempted to add the curve to every block in the region. However, the function ``block.add_curves_tr()`` rejects curves that include invalid radii for the block. In this case the curve lies entirely outside the horizon at :math:`R=2M=1`, and is successfully added to both "exterior" (:math:`r>R`) blocks.
 
-You can also add curves in :math:`(u,v)` coordinates with ``b.add_curves_uv()``, and add curves to specific blocks, both as shown below.
+You can also add curves in :math:`(u,v)` coordinates, or equivalently :math:`(t,r_{*})` coordinates, with ``b.add_curves_uv()``. You can also add curves only to specific blocks. Both shown below.
 
-Note that the argument of ``block.add_curves_tr()`` is a list of curves. Here we only created one curve, so the argument was a length-one list ``[crv]``. More generally we can input a list of curve objects like ``[crv1,crv2]`` to add many curves at once. In the source this is often done by initiating a list ``crvlist = []`` and iterating through things of the form ``crvlist += [crv]`` to extend the list inside of a loop, then calling ``block.add_curves_tr(crvlist)``. The same goes for ``block.add_curves_uv()`` and related functions.
+Note that the argument of ``block.add_curves_tr()`` is a list of curves. Here we only created one curve, so the argument was a length-one list ``crvlist = [crv]``. More generally we can input a list of curve objects like ``[crv1,crv2]`` to add many curves at once. In the source this is often done by initiating a list ``crvlist = []`` and iterating through things of the form ``crvlist += [crv]`` to extend the list inside of a loop, then calling ``block.add_curves_tr(crvlist)``. The same goes for ``block.add_curves_uv()`` and related functions.
 
 
 Add curves to specific blocks
@@ -83,7 +83,7 @@ Suppose we want to add a curve only to certain blocks. Let's consider the curve,
 .. math::
     v = \tanh(u)
 
-that is valid in any block. (Note it is timelike in the exterior and spacelike in the interior region.)
+that is valid in any block.
 
 Adding to all blocks as before we have::
 
@@ -180,7 +180,7 @@ Note that the style field ``curve.sty`` is a dictionary of parameters to be pass
     import matplotlib.pyplot as plt
 
     f = xh.mf.minkowski()
-    reg = xh.reg.MAXreg(f, boundary=True, rlines=False, uvgrid=True)
+    reg = xh.reg.MAXreg(f, boundary=True, rlines=False, uvgrid=False)
 
     t = np.array([1.75])
     r = np.array([0.91])
