@@ -13,6 +13,7 @@ A Python package.
 | **The new documentation is still under construction...**
 | **but there is now an ever expanding tutorial!**
 | **(Check docs version "latest" for updates.)**
+|
 
 **Requests for info/specific tutorial updates welcomed, send to jcschindler01 at gmail.**
 
@@ -32,7 +33,7 @@ Table of Contents
 
 Getting Started
 ---------------
-To install::
+A Python package. To install::
 
    pip install xhorizon
 
