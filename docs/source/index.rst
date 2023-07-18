@@ -14,6 +14,8 @@ A Python package.
 | **but there is now an ever expanding tutorial!**
 | **(Check docs version "latest" for updates.)**
 
+**Requests for info/specific tutorial updates welcomed, send to jcschindler01 at gmail.**
+
 
 Table of Contents
 -----------------
