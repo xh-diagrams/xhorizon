@@ -13,6 +13,8 @@ A Python package.
 | **The new documentation is still under construction...**
 | **but there is now an ever expanding tutorial!**
 
+**Requests for info/specific tutorial updates welcomed, send to jcschindler01 at gmail.**
+
 
 
 Links
@@ -33,7 +35,7 @@ JC Schindler, A Aguirre.
 
 Getting Started
 ---------------
-To install::
+A Python package. To install::
 
    pip install xhorizon
 
