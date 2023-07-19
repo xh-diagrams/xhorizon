@@ -19,14 +19,14 @@ from xhorizon.evap.helpers import irr
 
 ## styles
 rline_zero_sty      = dict(lw=1.5, c='0.48', zorder=11000)
-singularity_sty     = dict(ls='dashed', dashes=(2,2))
+singularity_sty     = dict(ls=(0,(2,2)))
 rline_inf_sty       = dict(lw=1.5, c='0.48', zorder=10000)
 rline_hor_sty       = dict(lw=0.4, c='k', zorder=9999)
 rline_sty           = dict(ls='-', zorder=10, lw=.6, alpha=.5)
-acc_shells_sty      = dict(lw=0.6, ls='dashed', dashes=(3,3), zorder=2000)
+acc_shells_sty      = dict(lw=0.6, ls=(0,(3,3)), zorder=2000)
 evap_shells_out_sty = acc_shells_sty
-evap_shells_in_sty  = dict(lw=1., ls='dashed', dashes=(1,1.2), zorder=2000)
-fill_horizons_sty   = dict(fc='none', ec='k', lw=0, hatch='c', zorder=9990)
+evap_shells_in_sty  = dict(lw=1., ls=(0,(1,1.2)), zorder=20000)
+fill_horizons_sty   = dict(fc='none', ec='k', lw=0, hatch='....', zorder=9990, alpha=.92)
 fill_density_sty    = dict(zorder=100)
 tick_sty            = dict(markersize=10, markeredgecolor='k', alpha=.3, zorder=100)
 
@@ -151,8 +151,9 @@ def acc_shells(reglist, chainparams, sty={}, inf=50., npoints=5001):
 				print("ACC SHELL COLOR dm/M=%s"%(dm/M))
 				col = shell_col(dm/M)
 				## style
-				style = dict(lw=0.2, ls='dashed', dashes=(4,4), c=1.*col, zorder=2000)
+				style = dict(lw=0.2, ls=(0,(4,4)), c=1.*col, zorder=2000)
 				style.update(sty)
+				print(style['c'])
 				## v value
 				vv = v0[i:i+1]
 				## curve
@@ -178,8 +179,9 @@ def evap_shells_out(reglist, chainparams, sty={}, inf=100., npoints=5001):
 					print("EVAP OUT SHELL COLOR dm/M=%s"%(dm/M))
 					col = shell_col(dm/M)
 					## style
-					style = dict(lw=0.2, ls='dashed', dashes=(4,4), c=1.*col, zorder=2000)
+					style = dict(lw=0.2, ls=(0,(4,4)), c=1.*col, zorder=2000)
 					style.update(sty)
+					print(style['c'])
 					## u value
 					uu = u0[i:i+1]
 					## curve
@@ -211,9 +213,11 @@ def evap_shells_in(reglist, chainparams, sty={}, inf=5., npoints=5001):
 				print("EVAP IN SHELL COLOR dm/M=%s"%(dm/M))
 				col = shell_col(dm/M)
 				## style
-				style = dict(lw=0.9, ls=':', c=1.*col, zorder=2000)
+				style = dict(lw=0.9, ls=(0,(1,1.5)), c=1.*col, zorder=2000)
 				style.update(sty)
+				print(style['c'])
 				## inner blocks
+				print(b.rj[1], rr, b.rj[1]<rr)
 				if b.rj[1]<rr:
 					## values
 					u = np.sort(np.concatenate([np.linspace(-1e-3,-1.,npoints//2),np.linspace(1e-3,1.,npoints//2),np.linspace(-inf,inf,npoints)]))

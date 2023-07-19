@@ -57,7 +57,7 @@ def demo():
 	draw = True
 
 	## label
-	label = '$(a)$'
+	label = ''
 
 	# func type
 	ftype = 0
@@ -73,18 +73,18 @@ def demo():
 	L = 10.
 
 	## evap
-	Nevap = 3
+	Nevap = 12
 	Tevap = 10.
 
 	## accrete
-	Nacc = 1
+	Nacc = 5
 	Tacc = .5
 
 	## seed
 	seed = 0
 
 	## vv
-	voff = -Tacc - 0.
+	voff = -0.5
 	veta = 1.
 
 	## uu
@@ -129,6 +129,8 @@ def demo():
 			plt.ylim(y0-0.5*aspect*sq,y0+0.5*aspect*sq)
 ##########################################
 
+	# plt.xlim(.1,2.1)
+	# plt.xticks([.5,2])
 
 	## go
 	reglist, chainparams = xh.evap.create_evap(params, seed=seed)
