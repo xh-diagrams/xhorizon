@@ -32,7 +32,7 @@ Table of Contents
 
 Getting Started
 ---------------
-To install::
+A Python package. To install::
 
    pip install xhorizon
 
