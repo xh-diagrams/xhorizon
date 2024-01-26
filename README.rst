@@ -41,5 +41,5 @@ A Python package. To install::
 
    pip install xhorizon
 
-To start using the tools, begin with the `tutorial <https://xhorizon.readthedocs.io/en/stable/TUTORIAL/00-overview.html>`_ and keep an eye out for `example scripts <https://github.com/xh-diagrams/xhorizon/tree/main/scripts/examples>`_.
+To start using the tools, begin with the `tutorial <https://xhorizon.readthedocs.io/en/latest/TUTORIAL/00-overview.html>`_ and keep an eye out for `example scripts <https://github.com/xh-diagrams/xhorizon/tree/main/scripts/examples>`_.
 
